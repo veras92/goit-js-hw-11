@@ -1,2 +1,58 @@
 @import './common';
 @import './example';
+
+.photo-card {
+  flex-basis: calc((100% - 60px) / 4);
+  border: 5px solid #26bfd3;
+  border-radius: 10px;
+  padding: 5px;
+}
+a:link {
+  text-decoration: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.info-item {
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+input {
+  border: 2px solid #33c682;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 203px;
+  padding: 5px;
+}
+button {
+  padding: 4px;
+  margin-left: 16px;
+  background-color: white;
+  border: 2px solid #33c682;
+  border-radius: 10px;
+  height: 33px;
+  width: 100px;
+  color: #33c682;
+  font-weight: 700;
+}
+
+.load-more {
+  display: block;
+  margin: 0 auto;
+}
+button:focus {
+  border: 2px solid #26bfd3;
+}
